@@ -61,7 +61,7 @@ echo "-----> Fetching and installing debootstrap"
 cd $DEBOOTSTRAP_BUILD
 wget http://archive.ubuntu.com/ubuntu/pool/main/d/debootstrap/debootstrap_1.0.76.tar.gz
 tar zxvf debootstrap_1.0.76.tar.gz
-cd debootstrap-1.0.76
+cd debootstrap
 DESTDIR=$CACHE_DIR/.tools/debootstrap fakeroot make
 DESTDIR=$CACHE_DIR/.tools/debootstrap fakeroot make install
 echo "debootstrap installed" | indent
