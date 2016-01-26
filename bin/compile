@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 set -e
+set -x #debugging
 
 mktmpdir() {
   dir=$(mktemp -t fakesu-$1-XXXX)
